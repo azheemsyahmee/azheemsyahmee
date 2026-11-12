@@ -2,16 +2,16 @@
 
 **Computer Science (Bioinformatics) Graduate | Aspiring Data Scientist, Data Analyst & ML Practitioner**
 
-I specialize in applied machine learning, statistical data analysis, and computational biology, with a focus on translating high-dimensional, complex data into interpretable models and clean software pipelines. My work spans deep learning for medical imaging, multi-omics clinical analytics, Bayesian optimization, and reproducible bioinformatics engineering.
+I am a recent Computer Science (Bioinformatics) graduate from Universiti Teknologi Malaysia (UTM) with hands-on academic research and project experience in applied machine learning, statistical data analysis, and computational biology. My projects focus on working with structured and unstructured biological data—from brain MRI scans and genomic sequences to clinical multi-omics tables—building reproducible pipelines, evaluating models rigorously, and developing clean software implementations.
 
 ---
 
-## 🎯 Career Focus & Core Competencies
+## 🎯 Focus Areas & Practical Experience
 
-* **Data Science & Predictive Modeling:** Supervised learning, classification, cross-validation methodology, leakage prevention, and model interpretability (Grad-CAM, SHAP).
-* **Data Analytics & ETL Pipelines:** Data wrangling, exploratory data analysis (EDA), multi-source dataset fusion, statistical testing, and interactive reporting.
-* **Bioinformatics & Computational Oncology:** Genomic sequence modeling, transcriptomic microarray classification, pathway activity synthesis, and TCGA multi-omics analysis.
-* **Software Engineering & Applied AI:** Modular Python package architecture, automated CI/CD testing with GitHub Actions, Streamlit interactive applications, and modern MVC web systems.
+* **Applied Machine Learning & Modeling:** Supervised classification, cross-validation evaluation, leak-free pipeline design, and model interpretability (Grad-CAM heatmaps).
+* **Data Analysis & Processing:** Exploratory data analysis (EDA), data cleaning, multi-source dataset integration, statistical evaluation, and reproducible scripting.
+* **Bioinformatics & Sequence Analysis:** Algorithmic sequence alignment (dynamic programming from scratch), recurrent neural sequence modeling (Bi-LSTM), and multi-omics cancer analytics.
+* **Software Implementation:** Modular Python packages, unit testing with GitHub Actions CI, interactive Streamlit tools, and full-stack MVC web applications.
 
 ---
 
@@ -19,46 +19,53 @@ I specialize in applied machine learning, statistical data analysis, and computa
 
 ### 1. Medical Computer Vision & Explainable AI
 * **[Explainable Deep Learning for Alzheimer's MRI](https://github.com/azheemsyahmee/alzheimer-mri-deep-learning-fyp)**
-  * Comparative benchmark of 5 neural network architectures on multi-class Alzheimer's staging.
-  * Custom `HybridEnsemble` (global ResNet-18 + local lesion classifier) achieving **89.46% accuracy** and 0.9324 macro AUC.
-  * Integrated **Grad-CAM visual heatmaps** for clinical interpretability and model trust.
+  * Undergraduate Final Year Project comparing 5 neural architectures on 4-stage Alzheimer's disease classification.
+  * Custom two-stage `HybridEnsemble` (global ResNet-18 backbone + local Grad-CAM guided PatchCNN) achieving **95.16% test accuracy** (standalone ResNet-18: **95.08%**) on the primary evaluation cohort ($N = 1,199$).
+  * Includes an ablation study on severe class-capping sensitivity ($N = 294$, 89.46% accuracy) and Grad-CAM attention visualizations.
 * **[Alzheimer's MRI Multi-Model Web Workbench](https://github.com/azheemsyahmee/ADImageClassification)**
-  * Production Streamlit deployment providing real-time multi-model inference across GoogLeNet, ResNet-18, ResNet-50, and VGG-16 with live diagnostic visualizations.
+  * Interactive Streamlit web application providing multi-model inference across GoogLeNet, ResNet-18, ResNet-50, and VGG-16 with diagnostic visualizations.
 
 ### 2. Multi-Omics Analytics & Machine Learning
 * **[TCGA-LUAD Multi-Omics Bioinformatics Pipeline](https://github.com/azheemsyahmee/tcga-luad-bioinformatics-pipeline)**
-  * Automated ETL pipeline consolidating clinical, somatic mutation, and mRNA-seq tables across 417 lung adenocarcinoma patients.
-  * Predictive classifier identifying smoking-induced oncogenic subtypes (**0.7863 ROC-AUC**), highlighting driver mutations (*TP53*, *KRAS*, *KEAP1*, *STK11*, *EGFR*).
+  * Automated data integration pipeline merging clinical phenotypes, somatic mutations, and mRNA-seq tables for 417 lung adenocarcinoma patients.
+  * Predictive classification of smoking-induced oncogenic subtypes (**0.7863 ROC-AUC**), analyzing driver alterations (*TP53*, *KRAS*, *KEAP1*, *STK11*, *EGFR*).
 * **[Leukemia GSE9476 Microarray Pipeline](https://github.com/azheemsyahmee/leukemia-gse9476-microarray-classification)** *(Private Staging)*
-  * Methodological audit and mathematical correction of pre-split data leakage across 22,283 gene expression probe sets ($N=64$).
+  * Methodological audit and correction of pre-split data leakage across 22,283 gene expression probe sets ($N = 64$).
   * Leak-free stratified 5-fold cross-validation benchmarking Logistic Regression (**96.88%** pooled accuracy) and class-weighted tree ensembles.
 
 ### 3. Generative Modeling & Deep Sequence Learning
 * **[Breast Cancer Reactome Pathway Analysis](https://github.com/azheemsyahmee/breast-cancer-reactome-pathway-analysis)**
-  * PyTorch Generative Adversarial Network (GAN) synthesizing continuous 50-dimensional biological pathway activity profiles.
-  * Direct empirical comparison between **Optuna Bayesian optimization** (3.66x faster convergence) and exhaustive Grid Search.
+  * PyTorch Generative Adversarial Network (GAN) generating continuous 50-dimensional biological pathway activity vectors.
+  * Empirical comparison of **Optuna Bayesian optimization** (3.66x faster convergence) versus exhaustive Grid Search, critically analyzing representation variance.
 * **[DNA Promoter Sequence Classification](https://github.com/azheemsyahmee/dna-promoter-sequence-classification)**
-  * **Bidirectional LSTM** and comparative recurrent neural architectures capturing upstream/downstream context on 57-bp *E. coli* promoter sequences (UCI dataset).
-  * Includes standalone FASTA sequence parser and nucleotide one-hot encoding suite.
+  * **Bidirectional LSTM** and comparative recurrent neural networks modeling upstream and downstream promoter context on 57-bp *E. coli* sequences (UCI dataset).
+  * Includes FASTA sequence parsing, one-hot encoding, and automated unit test suite.
 
-### 4. Software Engineering & Algorithms
+### 4. Algorithmic Implementations & Web Development
 * **[Pure Python Sequence Alignment Algorithms Suite](https://github.com/azheemsyahmee/bioinformatics-sequence-alignment-algorithms)**
-  * Needleman-Wunsch (global) and Smith-Waterman (local) dynamic programming implemented from first principles with zero third-party dependencies.
-  * Paired with a desktop GUI (Kivy) and an interactive web workbench (Streamlit) integrating the EMBL-EBI Clustal Omega API.
+  * Needleman-Wunsch (global) and Smith-Waterman (local) dynamic programming implemented from first principles using standard library data structures.
+  * Includes an interactive Kivy desktop GUI with DP score matrix visualization and a Streamlit web interface integrating the EMBL-EBI Clustal Omega API.
 * **[Laravel Student Management CRUD Application](https://github.com/azheemsyahmee/laravel-student-management-crud)**
-  * Modern PHP 8 / Laravel 10 full-stack web application with role-based access control (RBAC), queued asynchronous email notifications, and automated document storage cleanup.
+  * Full-stack PHP / Laravel 10 application featuring role-based access control (RBAC), queued asynchronous email notifications, and automated document storage management.
 
 ---
 
-## 🛠️ Technical Toolkit
+## 🛠️ Technical Skills & Experience Level
 
-| Domain | Tools & Technologies |
-| :--- | :--- |
-| **Languages** | Python, SQL, PHP, R (basic) |
-| **Data Science & ML** | Scikit-learn, PyTorch, TensorFlow / Keras, Optuna, Imbalanced-learn, Pandas, NumPy, SciPy |
-| **Data Visualization** | Matplotlib, Seaborn, Streamlit, Grad-CAM |
-| **Bioinformatics** | Dynamic Programming, FASTA / FASTQ, Biopython, TCGA / GEO, Reactome |
-| **Engineering & Tools** | Git, GitHub Actions (CI/CD), Linux / Bash, MySQL, Laravel, REST APIs |
+### Applied in Completed Projects
+* **Languages:** Python, PHP, SQL
+* **Data Science & Machine Learning:** PyTorch, TensorFlow / Keras, Scikit-learn, Pandas, NumPy, SciPy, Imbalanced-learn, Optuna
+* **Visualization & Applications:** Matplotlib, Seaborn, Streamlit, Grad-CAM, Laravel 10, MySQL, Blade
+* **Development & CI/CD:** Git, GitHub Actions, Linux / Bash environment
+* **Bioinformatics:** Dynamic programming (Needleman-Wunsch, Smith-Waterman), TCGA multi-omics ETL, Reactome pathway modeling
+
+### Basic / Coursework Experience
+* **Languages:** R (introductory bio-statistics), C++ (object-oriented data structures and algorithms coursework), Java (basic OOP coursework)
+* **Libraries & Interfaces:** Biopython, FASTA/FASTQ sequence handling, REST APIs (EMBL-EBI integration)
+
+### Currently Learning & Expanding
+* **Containerization:** Docker container fundamentals
+* **Cloud & MLOps:** Cloud deployment workflows and experiment tracking fundamentals
 
 ---
 
@@ -66,4 +73,4 @@ I specialize in applied machine learning, statistical data analysis, and computa
 
 * **GitHub:** [@azheemsyahmee](https://github.com/azheemsyahmee)
 * **LinkedIn:** [Azheem Syahmee](https://www.linkedin.com/in/azheem-syahmee-65b111246/)
-* **Academic Background:** Bachelor of Computer Science (Bioinformatics), Universiti Teknologi Malaysia (UTM)
+* **Education:** Bachelor of Computer Science (Bioinformatics), Universiti Teknologi Malaysia (UTM)
